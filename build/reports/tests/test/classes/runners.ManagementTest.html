@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - ManagementTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>ManagementTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/runners.html">runners</a> &gt; ManagementTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.516s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testParallel()</td>
+<td class="success">6.516s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:47:48.067 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1676674068065
+17:47:48.086 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+17:47:49.731 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 &gt; GET https://reqres.in/api/users/2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:47:49.731 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 &gt; DELETE https://reqres.in/api/users/2
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+17:47:49.732 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
+
+17:47:49.732 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 &gt; POST https://reqres.in/api/users
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 34
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;}
+
+17:47:50.392 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 659
+1 &lt; 200
+1 &lt; Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: REVALIDATED
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=a2DqrM33ivgU%2FgK40YSU5YV50b4yW3vkNrzgv9wm%2FEzkGrDaRaEw1hL0w%2FjBNJzyKZzSDp07JJPv2ml%2FrI1agUtdM8NL8sRxWqVLEIG1XssIyXFIP6J4w6GcmQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 79b2114bda353360-MIA
+{&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
+
+17:47:50.392 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 657
+1 &lt; 204
+1 &lt; Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 &lt; Content-Length: 0
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;2-vyGp6PvFo4RvsFtPoIWeCReyIC8&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=dSpFlgrrj12v3NgJVF1CNlRDbVcwdqENkn8gYGfTGCQFY1ItxFj6MkjWEzYYr7rhzq6s1b8eOckmP9fo3GWF9KdXR%2Bp7EG0gxHa8qC%2FrRn0Gm5Dj9IfGDFJjJg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 79b2114bd910334c-MIA
+
+
+17:47:50.393 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 &lt; 201
+1 &lt; Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;54-sadqyixLKde2V0wtaQ56Heg3al0&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=BohYNlihiTRqLMz%2FEL%2Fd%2BIut3ct5KhEGvPw5tTlADysqSGy%2BltTxTF6hfO%2BxO8irp59dc7sbgphBKaOHlRWEKJgR9cnahEmxHBPAw0cMyfRfWaN3MMPUgF0ASw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 79b2114bdf62dae1-MIA
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;,&quot;id&quot;:&quot;586&quot;,&quot;createdAt&quot;:&quot;2023-02-17T22:47:55.686Z&quot;}
+
+17:47:50.407 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 673
+1 &lt; 201
+1 &lt; Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 84
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;54-inhsnBRy+fQI1szuEiXnJfqRVGQ&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BdjOCxbTcZe1LxD78tIW096yWZQEF5NZmFfxdgIejOOOehY%2FxTUBx8%2Bqa2eWVqpGT%2FHoqDsnI7I0%2BTQDGLNvlinQTK51poeTvBIPZOnoJ5vfo2gTSQx0xbZjGQ%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 79b2114bdc4bb3ce-MIA
+{&quot;name&quot;:&quot;morpheus&quot;,&quot;job&quot;:&quot;leader&quot;,&quot;id&quot;:&quot;206&quot;,&quot;createdAt&quot;:&quot;2023-02-17T22:47:55.715Z&quot;}
+
+---------------------------------------------------------
+feature: classpath:consumos/post_outline.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9521
+---------------------------------------------------------
+
+17:47:51.557 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 1 of 5 (4 remaining) classpath:consumos/post_outline.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_delete.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9562
+---------------------------------------------------------
+
+17:47:51.634 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 2 of 5 (3 remaining) classpath:consumos/user_delete.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_get.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,0057
+---------------------------------------------------------
+
+17:47:51.720 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 3 of 5 (2 remaining) classpath:consumos/user_get.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_post.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9698
+---------------------------------------------------------
+
+17:47:51.786 [pool-2-thread-1] INFO  com.intuit.karate.Suite - &lt;&lt;pass&gt;&gt; feature 4 of 5 (1 remaining) classpath:consumos/user_post.feature
+Karate version: 1.2.0.RC5
+======================================================
+elapsed:   4,79 | threads:    4 | thread time: 3,88 
+features:     4 | skipped:    1 | efficiency: 0,20
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC5
+file:///E:/Automatizacion/KARATE/apikarate/build/karate-reports/karate-summary.html
+===================================================================
+
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.post_outline.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_delete.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_get.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_post.json' contains 1 features
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at 17/02/2023, 5:47:53 p. m.</p>
+</div>
+</div>
+</body>
+</html>

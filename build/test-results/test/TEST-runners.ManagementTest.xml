@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.ManagementTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-17T22:47:46" hostname="DESKTOP-J3FM157" time="6.516">
+  <properties/>
+  <testcase name="testParallel()" classname="runners.ManagementTest" time="6.516"/>
+  <system-out><![CDATA[17:47:48.067 [Test worker] INFO  com.intuit.karate.Suite - backed up existing 'build\karate-reports' dir to: build\karate-reports_1676674068065
+17:47:48.086 [Test worker] DEBUG com.intuit.karate.Suite - waiting for 5 features to complete
+17:47:49.731 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:47:49.731 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > DELETE https://reqres.in/api/users/2
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:47:49.732 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+17:47:49.732 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://reqres.in/api/users
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 34
+1 > Host: reqres.in
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.16)
+1 > Accept-Encoding: gzip,deflate
+{"name":"morpheus","job":"leader"}
+
+17:47:50.392 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 659
+1 < 200
+1 < Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"118-pbdwwFo9SKNhD3Lx5iHJyngpq00"
+1 < Via: 1.1 vegur
+1 < Cache-Control: max-age=14400
+1 < CF-Cache-Status: REVALIDATED
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=a2DqrM33ivgU%2FgK40YSU5YV50b4yW3vkNrzgv9wm%2FEzkGrDaRaEw1hL0w%2FjBNJzyKZzSDp07JJPv2ml%2FrI1agUtdM8NL8sRxWqVLEIG1XssIyXFIP6J4w6GcmQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Vary: Accept-Encoding
+1 < Server: cloudflare
+1 < CF-RAY: 79b2114bda353360-MIA
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+
+17:47:50.392 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 657
+1 < 204
+1 < Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 < Content-Length: 0
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=dSpFlgrrj12v3NgJVF1CNlRDbVcwdqENkn8gYGfTGCQFY1ItxFj6MkjWEzYYr7rhzq6s1b8eOckmP9fo3GWF9KdXR%2Bp7EG0gxHa8qC%2FrRn0Gm5Dj9IfGDFJjJg%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 79b2114bd910334c-MIA
+
+
+17:47:50.393 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 644
+1 < 201
+1 < Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-sadqyixLKde2V0wtaQ56Heg3al0"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=BohYNlihiTRqLMz%2FEL%2Fd%2BIut3ct5KhEGvPw5tTlADysqSGy%2BltTxTF6hfO%2BxO8irp59dc7sbgphBKaOHlRWEKJgR9cnahEmxHBPAw0cMyfRfWaN3MMPUgF0ASw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 79b2114bdf62dae1-MIA
+{"name":"morpheus","job":"leader","id":"586","createdAt":"2023-02-17T22:47:55.686Z"}
+
+17:47:50.407 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 673
+1 < 201
+1 < Date: Fri, 17 Feb 2023 22:47:55 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 84
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"54-inhsnBRy+fQI1szuEiXnJfqRVGQ"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BdjOCxbTcZe1LxD78tIW096yWZQEF5NZmFfxdgIejOOOehY%2FxTUBx8%2Bqa2eWVqpGT%2FHoqDsnI7I0%2BTQDGLNvlinQTK51poeTvBIPZOnoJ5vfo2gTSQx0xbZjGQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 79b2114bdc4bb3ce-MIA
+{"name":"morpheus","job":"leader","id":"206","createdAt":"2023-02-17T22:47:55.715Z"}
+
+---------------------------------------------------------
+feature: classpath:consumos/post_outline.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9521
+---------------------------------------------------------
+
+17:47:51.557 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 5 (4 remaining) classpath:consumos/post_outline.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_delete.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9562
+---------------------------------------------------------
+
+17:47:51.634 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 5 (3 remaining) classpath:consumos/user_delete.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_get.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 1,0057
+---------------------------------------------------------
+
+17:47:51.720 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 3 of 5 (2 remaining) classpath:consumos/user_get.feature
+---------------------------------------------------------
+feature: classpath:consumos/user_post.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 0,9698
+---------------------------------------------------------
+
+17:47:51.786 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 4 of 5 (1 remaining) classpath:consumos/user_post.feature
+Karate version: 1.2.0.RC5
+======================================================
+elapsed:   4,79 | threads:    4 | thread time: 3,88 
+features:     4 | skipped:    1 | efficiency: 0,20
+scenarios:    4 | passed:     4 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC5
+file:///E:/Automatizacion/KARATE/apikarate/build/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+  <system-err><![CDATA[feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.post_outline.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_delete.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_get.json' contains 1 features
+feb. 17, 2023 5:47:52 P. M. net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'E:\Automatizacion\KARATE\apikarate\build\karate-reports\consumos.user_post.json' contains 1 features
+]]></system-err>
+</testsuite>
