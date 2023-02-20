@@ -28,20 +28,20 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-type">
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2023-02-17 05:50:56 p. m.</div>
+    <div>2023-02-19 08:57:43 p. m.</div>
   </div>        
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:7]"><span>[1:7]</span> <span>consultar usuario</span></a>
           </div>
         </div>
@@ -67,8 +67,8 @@
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1221</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1270</span>
             </div>
           </div>
           
@@ -85,7 +85,7 @@
         <span>*</span>&nbsp;<span>def jsonResponse = read(&#39;../json/lista_de_usuarios.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">256</div>
+    <div class="time-cell passed">244</div>
   </div>
 
    
@@ -113,7 +113,7 @@
         <span>Given</span>&nbsp;<span>url &quot;https://reqres.in&quot; + &quot;/api/users&quot; + &quot;/2&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">8</div>
   </div>
 
    
@@ -141,7 +141,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">923</div>
+    <div class="time-cell passed">993</div>
   </div>
 
    
@@ -150,7 +150,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.10">17:50:56.281 request:
+  <div class="preformatted" data-parent="0.10">20:57:42.684 request:
 1 &gt; GET https://reqres.in/api/users/2
 1 &gt; Host: reqres.in
 1 &gt; Connection: Keep-Alive
@@ -158,9 +158,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-17:50:56.716 response time in milliseconds: 431
+20:57:43.247 response time in milliseconds: 561
 1 &lt; 200
-1 &lt; Date: Fri, 17 Feb 2023 22:51:02 GMT
+1 &lt; Date: Mon, 20 Feb 2023 01:57:43 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -169,13 +169,12 @@
 1 &lt; Etag: W/&quot;118-pbdwwFo9SKNhD3Lx5iHJyngpq00&quot;
 1 &lt; Via: 1.1 vegur
 1 &lt; Cache-Control: max-age=14400
-1 &lt; CF-Cache-Status: HIT
-1 &lt; Age: 187
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=CMCnAIUt4ZD1B48J5%2FJAgcpFGTfzjwMJM4V5U5BdMqQ84Irom1uqp79NmntqAvWf8JV2XBfFCy80w3ZJAHNjNSvIXUhFEma8ixnnONqiT9uk9GFET6dCc4sl1A%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; CF-Cache-Status: REVALIDATED
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=v0XgeKq%2B2jj4yfRgh3cqnAJeWzUKLSe5gr%2BompOnLicBWkThSSkZeCWxJ%2FWlmFlJNKi9SELxte3xZhnTZ%2BrNv1wCoyidQyjpEaLWJ%2BjOyykqWKZgHfLezEEVkg%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Vary: Accept-Encoding
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 79b215d98c8ab3d3-MIA
+1 &lt; CF-RAY: 79c3a20f5c8ddab1-MIA
 {&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
 
 </div>   
@@ -219,13 +218,13 @@
 
   <div class="step-row">
     <div class="step-container" id="0.12">
-      <div class="step-ref failed">12</div>
+      <div class="step-ref passed">12</div>
       
-      <div class="step-cell failed">
-        <span>And</span>&nbsp;<span>match $ == {&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match $ == jsonResponse</span>
       </div>
     </div>
-    <div class="time-cell failed">33</div>
+    <div class="time-cell passed">25</div>
   </div>
 
    
@@ -234,23 +233,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.12">17:50:56.758 src/test/java/consumos/user_get.feature:12
-And match $ == {&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
-match failed: EQUALS
-  $ | not equal | match failed for name: &#39;data&#39; (MAP:MAP)
-  {&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
-  {&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;},&quot;support&quot;:{&quot;url&quot;:&quot;https://reqres.in/#support-heading&quot;,&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;}}
-
-    $.data | not equal | match failed for name: &#39;id&#39; (MAP:MAP)
-    {&quot;id&quot;:2,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;}
-    {&quot;id&quot;:3,&quot;email&quot;:&quot;janet.weaver@reqres.in&quot;,&quot;first_name&quot;:&quot;Janet&quot;,&quot;last_name&quot;:&quot;Weaver&quot;,&quot;avatar&quot;:&quot;https://reqres.in/img/faces/2-image.jpg&quot;}
-
-      $.data.id | not equal (NUMBER:NUMBER)
-      2
-      3
-
-src/test/java/consumos/user_get.feature:12
-</div>   
+     
 
   
 
